@@ -7,9 +7,9 @@
 </html>
 <script>
 
-const currentDate = new Date();
-const timestamp = currentDate.getTime();
-document.getElementById("time").innerHTML=  now.getMinutes();
+const now = new Date();
+
+document.getElementById("time").innerHTML=  now.getMinutes().toString()+":"+now.getHours.toString();
 
 
 
