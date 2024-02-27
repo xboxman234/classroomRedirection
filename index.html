@@ -3,13 +3,36 @@
   <head>
 
     <p id="time">k</p>
-  </head>k
+  </head>
+  <button onclick="a()">
+    A day
+  </button>
+  <button onclick="b()">
+    B day
+  </button>
 </html>
 <script>
 
 const now = new Date();
+min=now.getMinutes()
+hour=now.getHours()
+document.getElementById("time").innerHTML=  hour+":"+min
+function a()
+{
+  if (hour<=10 && min<=40){
+    window.location.replace("https://classroom.google.com/u/0/c/NTIzODg1NDAyNDk5")
+  }else if (hour<=13 && min<=5){
+    window.location.replace("https://classroom.google.com/u/0/c/NTg5NTczNTQ0OTM2")
+  }else if (hour<=14 && min<=30){
+    window.location.replace("https://classroom.google.com/u/0/c/NTI0MDIzMjg2NjY5")
+  }else if (hour <=16){
+    window.location.replace("https://classroom.google.com/u/0/c/NTIzOTQwNjk1ODkw")
+  }else{
+    window.location.replace("https://classroom.google.com/u/0/h")
+  }
+  
+}
 
-document.getElementById("time").innerHTML=  now.getMinutes().toString()+":"+now.getHours.toString();
 
 
 
