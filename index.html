@@ -16,14 +16,16 @@
 const now = new Date();
 min=now.getMinutes()
 hour=now.getHours()
-document.getElementById("time").innerHTML=  hour+":"+min
+
+fulltime=hour+(min/60)
+  document.getElementById("time").innerHTML=  fulltime
 function a()
 {
-  if (hour<=10 && min<=40){
+  if (fulltime<10.6){
     window.location.replace("https://classroom.google.com/u/0/c/NTIzODg1NDAyNDk5")
-  }else if (hour<=13){
+  }else if (fulltime<13.08){
     window.location.replace("https://classroom.google.com/u/0/c/NTg5NTczNTQ0OTM2")
-  }else if (hour<=14 && min<=30){
+  }else if (fulltime<14.5){
     window.location.replace("https://classroom.google.com/u/0/c/NTI0MDIzMjg2NjY5")
   }else if (hour <=16){
     window.location.replace("https://classroom.google.com/u/0/c/NTIzOTQwNjk1ODkw")
@@ -36,11 +38,11 @@ function a()
 }
   function b()
   {
-    if (hour<=10 && min<=40){
+    if (fulltime<10.6){
       window.location.replace("https://classroom.google.com/u/0/c/NTI0MDEzNTQyOTg5")
-    }else if (hour<=13 && min<=5){
+    }else if (fulltime<13.08){
       window.location.replace("https://classroom.google.com/u/0/c/NTI0MDE0MzY1MzA4")
-    }else if (hour<=14 && min<=30){
+    }else if (fulltime<14.5){
       window.location.replace("https://classroom.google.com/u/0/h")
     }else if (hour <=16){
       window.location.replace("https://classroom.google.com/u/0/c/NTg5MzE1MTc3Njcy")
